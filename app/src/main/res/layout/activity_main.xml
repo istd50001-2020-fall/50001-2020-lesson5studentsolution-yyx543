@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+
+    <ImageView
+        android:src="@drawable/background1"
+        android:alpha="0.5"
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_weight="1"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewSampleNodeValue"
+            android:text="Testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:text="How do you find our toilet?"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewDissatisfied"
+                android:src="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageViewNeutral"
+                android:src="@drawable/ic_sentiment_neutral_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageViewSatisfied"
+                android:src="@drawable/ic_sentiment_satisfied_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTally"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="100dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:text="customers satisfied"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_my_icon"
+            android:contentDescription="submit"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+</RelativeLayout>
